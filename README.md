@@ -16,3 +16,10 @@ public key cryptography" by Shpilrain and Ushakov, availble at
 http://www.sci.ccny.cuny.edu/~shpil/thomcryp.pdf
 
 In Thompsonsgroup.py, this algorithm is implemented using Python.
+
+## Example usage
+
+In order to compute the normal form of the element g = x_3^2 x_0 x_2, enter
+```python 
+normalForm([ [3,2], [0,1], [2,1] ])
+```
