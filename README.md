@@ -15,11 +15,15 @@ The normal form can be computed via an algorithm from the article "Thompson's gr
 public key cryptography" by Shpilrain and Ushakov, availble at
 http://www.sci.ccny.cuny.edu/~shpil/thomcryp.pdf
 
-In Thompsonsgroup.py, this algorithm is implemented using Python.
+In Thompsonsgroup.py, this algorithm is implemented using Python. 
 
 ## Example usage
 
-In order to compute the normal form of the element g = x_3^2 x_0 x_2, enter
+We represent words in Thompson's group as a list of 2-lists, each 2-list consisting of an index (in {0,1,2,...}) and a number in {1,-1} (the exponent). So, the word x_1^2 x_3 x_2^{-1} will be represented as
 ```python 
-normalForm([ [3,2], [0,1], [2,1] ])
+[ [1,1], [1,1], [1,3], [2,-1] ]
+```
+To compute the normal form of this element, enter
+```python 
+normalForm([ [1,1], [1,1], [1,3], [2,-1] ])
 ```
